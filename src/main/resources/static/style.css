@@ -7,9 +7,14 @@
     list-style-type: none;
 }
 
+h1,h2,h3,h2,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
 html{
     height: 100%;
-    font-family: Cantarell;
+    font-family: Cantarell, serif;
 }
 
 body{
@@ -23,12 +28,12 @@ img{
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: #464950;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     font-weight: bolder;
-    color: black;
+    color: white;
     position: fixed;
     left: 0;
     right: 0;
@@ -39,7 +44,7 @@ img{
 
 .navlinks{
     width: 235px;
-    color: black;
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -52,7 +57,7 @@ img{
 .profile-section{
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
     font-size: .9rem;
     padding-right: 1.5rem;
 }
@@ -94,7 +99,6 @@ img{
     transition: 0.5s;
     z-index: 0;
     font-size: 1rem;
-    padding-top: .5rem;
 }
 
 .sidenav ul{
@@ -105,6 +109,11 @@ img{
 .sidenav ul li{
     width: 100%;
     padding: .4rem 1.5rem;
+}
+
+.sidenav ul li:first-child{
+    background-color: white;
+    color: black;
 }
 
 
@@ -124,11 +133,11 @@ img{
 
 
 
-.card{
+.my-card{
     color: white;
     width: 100%;
     padding:.5rem;
-    
+
 }
 
 .p0{
@@ -138,6 +147,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 5px;
 }
 
 .p1{
@@ -147,6 +157,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 5px;
+
 }
 .p2{
     min-height: 100px;
@@ -155,6 +167,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 5px;
 }
 .p3{
     min-height: 100px;
@@ -163,6 +176,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 5px;
 }
 .p4{
     min-height: 100px;
@@ -171,6 +185,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 5px;
 }
 
 .tab-view{
@@ -229,12 +244,12 @@ img{
         align-items: center;
     }
 
-    .card{
+    .my-card{
         width: 50%;
         padding:.5rem;
         background-color: #f2f2f2;
     }
-     .card:nth-child(5){
+     .my-card:nth-child(5){
          width: 100%;
      }
 
@@ -250,13 +265,13 @@ img{
 
 @media (min-width:992px){
 
-    .card{
+    .my-card{
         width: 20%;
         padding:.5rem;
         background-color: #f2f2f2;
     }
 
-    .card:nth-child(5){
+    .my-card:nth-child(5){
         width: 20%;
     }
 
@@ -271,28 +286,9 @@ label{
     font-size: 1.7rem;
 }
 
-#customers {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
 
-#customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
-}
 
 
 

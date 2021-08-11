@@ -34,3 +34,8 @@ myElement.addEventListener("click",()=>{
 
     //
 });
+
+
+const hello = ()=>{
+    alert("hello kennedy");
+}
