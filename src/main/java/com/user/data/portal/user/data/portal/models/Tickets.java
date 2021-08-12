@@ -7,14 +7,19 @@ import javax.persistence.*;
 public class Tickets {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
+    @Column(name="inc_number")
     private String inc_number;
+    @Column(name="raised_by")
     private String raised_by;
+    @Column(name="priority")
     private String priority;
+    @Column(name="assigned_to")
     private String assigned_to;
+    @Column(name="cause_of_failure")
     private String cause_of_failure;
+    @Column(name="status")
     private String status;
 
     public void setId(Long id) {

@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS TICKETS;
+
+CREATE TABLE TICKETS (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    inc_number VARCHAR(250) NOT NULL,
+    raised_by VARCHAR(250) NOT NULL,
+    priority VARCHAR(250) NOT NULL,
+    assigned_to VARCHAR(250) NOT NULL,
+    cause_of_failure VARCHAR(250) NOT NULL,
+    status VARCHAR(250) NOT NULL
+);

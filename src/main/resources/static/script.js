@@ -1,6 +1,16 @@
 var myElement=document.getElementById("nav-toggle");
 var isToggled=false;
 
+const myTestFunction=()=>{
+    $("#testtable").load(location.href + " #testtable");
+}
+
+$("#hey").click(()=>{
+    setInterval(()=>{
+        myTestFunction();
+    },5000);
+});
+
 
 const myTabs=document.querySelectorAll('[data-target]');
 const myTabsContent=document.querySelectorAll('[data-content]');
@@ -38,4 +48,10 @@ myElement.addEventListener("click",()=>{
 
 const hello = ()=>{
     alert("hello kennedy");
+}
+
+function updateEventCount() {
+    $.get("event-count").done(function(fragment) { // get from controller
+        $("#eventCount").replaceWith(fragment); // update snippet of page
+    });
 }

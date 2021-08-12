@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+
+<div th:fragment="mytable">
+
+    <table id="testtable">
+        <thead><tr><th>INC <button id="hey">Click me</button>
+            <button id="testbutton">Hello there</button>
+        </th></tr></thead>
+        <tbody>
+        <tr th:each="ticket: ${tickets}">
+            <td th:text="${ticket.raised_by}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+<script th:src="@{jquery.min.js}"></script>
+<script th:src="@{script.js}"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@ import com.user.data.portal.user.data.portal.services.TicketsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 
 @Controller
 public class TicketsControllers {
@@ -16,7 +16,18 @@ public class TicketsControllers {
     }
 
     @GetMapping(value = "/tickets")
-    public String listStudents(){
+    public String listStudents(Model model){
+
+        model.addAttribute("tickets",ticketsService.getAllTickets());
+
         return "index";
     }
+
+    @GetMapping(value = "/hello")
+    public String test(Model model){
+        model.addAttribute("tickets",ticketsService.getAllTickets());
+        System.out.println(ticketsService.getAllTickets().get(16).getRaised_by());
+        return "fragments/footer :: tickets";
+    }
+
 }
