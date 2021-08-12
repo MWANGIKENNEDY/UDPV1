@@ -5,13 +5,25 @@
 
 <div th:fragment="mytable">
 
-    <table id="testtable">
-        <thead><tr><th>INC <button id="hey">Click me</button>
-            <button id="testbutton">Hello there</button>
-        </th></tr></thead>
+    <table id="testtable" class="table">
+        <thead>
+        <tr>
+            <th>INC</th>
+            <th>Raised by</th>
+            <th>Priority</th>
+            <th>Assigned to</th>
+            <th>Cause of failure</th>
+            <th>Status</th>
+        </tr>
+        </thead>
         <tbody>
         <tr th:each="ticket: ${tickets}">
+            <td th:text="${ticket.inc_number}"></td>
             <td th:text="${ticket.raised_by}"></td>
+            <td th:text="${ticket.priority}"></td>
+            <td th:text="${ticket.assigned_to}"></td>
+            <td th:text="${ticket.cause_of_failure}"></td>
+            <td th:text="${ticket.status}"></td>
         </tr>
         </tbody>
     </table>

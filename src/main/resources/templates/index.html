@@ -52,7 +52,6 @@
                 </div>
 
     <main class="layout-wrapper">
-
         <div class="my-card">
             <div class="p0">
 
@@ -72,11 +71,12 @@
 </div>
 
 <div class="my-card">
-    <div class="p2">
-        <h5>P2</h5>
-        <h2>2</h2>
-
-    </div>
+    <a>
+        <div class="p2">
+            <h5>P2</h5>
+            <h2>2</h2>
+        </div>
+    </a>
 </div>
 
 <div class="my-card">
@@ -94,53 +94,32 @@
     </div>
 </div>
 
+<div class="table-control-panel">
 
-        <div class="tab-view">
-           <div class="tab-button">
-               <div class="active b1" data-target="#table">Dashboard 1</div>
-           </div>
-            <div class="tab-button">
-                <div class="b1" data-target="#graph">Dashboard 2</div>
-            </div>
+    <div class="tab-view">
+        <div class="tab-button">
+            <div class="active b1" data-target="#table">INCIDENTS</div>
         </div>
+        <div class="tab-button">
+            <div class="b1" data-target="#graph">STATS</div>
+        </div>
+    </div>
+
+    <div class="control-panel">
+        kennedy mwangi
+    </div>
+
+</div>
+
 
         <div class="tab-content">
 
             <div id="table" data-content class="active">
-
-                <table class="table table-dark table-striped">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr th:onclick="hello()">
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div th:insert="fragments/footer :: mytable"></div>
             </div>
 
             <div id="graph" data-content>
-                <div th:insert="fragments/footer :: mytable"></div>
+                <p>This is my kennedy</p>
             </div>
 
         </div>
