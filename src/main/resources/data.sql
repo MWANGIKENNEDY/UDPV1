@@ -16,4 +16,4 @@ INSERT INTO TICKETS  (inc_number,raised_by,priority,assigned_to,cause_of_failure
 ('INC000078564790','jobedi','LOW','ADC_NOC','Power Fault','Assigned'),
 ('INC000078123456','kkiiru','HIGH','ADC_NOC','Power Fault','Assigned'),
 ('INC000009123454','kkiiru','LOW','ADC_NOC','Power Fault','Assigned'),
-('INC000098321457','kingkaka','MEDIUM','ADC_NOC','Power Fault','Assigned');
+('INC000098321457','kennedym','MEDIUM','ADC_NOC','Power Fault','Assigned');

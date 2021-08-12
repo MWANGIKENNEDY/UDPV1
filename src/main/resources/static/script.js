@@ -1,15 +1,24 @@
 var myElement=document.getElementById("nav-toggle");
 var isToggled=false;
 
+document.addEventListener('DOMContentLoaded',()=>{
+    console.log("DOM loaded");
+    setInterval(()=>{
+        myTestFunction();
+        testFetch();
+        console.log("hey");
+    },2000);
+});
+
 const myTestFunction=()=>{
     $("#testtable").load(location.href + " #testtable");
 }
 
-$("#hey").click(()=>{
-    setInterval(()=>{
-        myTestFunction();
-    },5000);
-});
+const testFetch=()=>{
+    fetch('http://localhost:8080/hello')
+        .then(response => response.json())
+        .then(json => console.log(json))
+}
 
 
 const myTabs=document.querySelectorAll('[data-target]');

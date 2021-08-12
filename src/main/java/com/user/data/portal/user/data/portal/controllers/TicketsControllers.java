@@ -17,16 +17,14 @@ public class TicketsControllers {
 
     @GetMapping(value = "/tickets")
     public String listStudents(Model model){
-
         model.addAttribute("tickets",ticketsService.getAllTickets());
-
         return "index";
     }
 
     @GetMapping(value = "/hello")
     public String test(Model model){
         model.addAttribute("tickets",ticketsService.getAllTickets());
-        System.out.println(ticketsService.getAllTickets().get(16).getRaised_by());
+        System.out.println("test1");
         return "fragments/footer :: tickets";
     }
 
