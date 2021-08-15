@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{bootstrap.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{style.css}">
+    <title>Title</title>
+</head>
+<body >
+
+<main th:fragment="ftth-fragment" class="layout-wrapper">
+
+    <div class="my-card">
+        <div class="p0">
+            <h5>All Tickets</h5>
+            <h3>123</h3>
+        </div>
+    </div>
+
+    <div class="my-card">
+        <div class="p1">
+
+            <h5>P1</h5>
+            <h2>4</h2>
+
+        </div>
+    </div>
+
+    <div class="my-card">
+        <a>
+            <div class="p2">
+                <h5>P2</h5>
+                <h2>2</h2>
+            </div>
+        </a>
+    </div>
+
+    <div class="my-card">
+        <div class="p3">
+            <h5>P3</h5>
+            <h2>1</h2>
+        </div>
+    </div>
+
+    <div class="my-card">
+        <div class="p4">
+            <h5>P4</h5>
+            <h2>14</h2>
+
+        </div>
+    </div>
+
+    <div class="table-control-panel">
+
+        <div class="tab-view">
+            <div class="tab-button">
+                <div class="active b1" data-target="#table">INCIDENTS</div>
+            </div>
+            <div class="tab-button">
+                <div class="b1" data-target="#graph">STATS</div>
+            </div>
+        </div>
+
+        <div class="control-panel">
+            kennedy mwangi
+        </div>
+
+    </div>
+
+
+    <div class="tab-content">
+
+        <div id="table" data-content class="active">
+            <div th:insert="fragments/footer :: mytable"></div>
+        </div>
+
+        <div id="graph" data-content>
+            <p>This is my kennedy</p>
+        </div>
+
+    </div>
+
+</main>
+
+
+<script th:src="@{jquery.min.js}"></script>
+<script th:src="@{script.js}"></script>
+</body>
+</html>

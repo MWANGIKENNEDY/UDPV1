@@ -24,7 +24,6 @@ public class TicketsControllers {
     @GetMapping(value = "/hello")
     public String test(Model model){
         model.addAttribute("tickets",ticketsService.getAllTickets());
-        System.out.println("test1");
         return "fragments/footer :: tickets";
     }
 

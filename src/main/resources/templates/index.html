@@ -14,6 +14,9 @@
 <body>
 
     <header>
+        <section class="banner">
+            <img th:src="@{udpp.png}" alt="saf-logo"> <h5>Welcome to Unified Data Portal</h5>
+        </section>
 <nav class="nav-bar">
 <div class="navlinks">
     <img th:src="@{saflogo.png}" alt="saf-logo">
@@ -21,108 +24,38 @@
         <label id="nav-toggle">&#9776;</label>
     </div>
 </div>
-
 <div class="profile-section">
     <div class="icon">
         <i class="fa fa-user-circle" aria-hidden="true"></i>
     </div>
     <span>Kennedy Mwangi</span>
 </div>
-
 </nav>
     </header>
 
     <div class="sidenav">
-
         <ul>
-            <li><a><span><i class="fa fa-cloud"></i></span><span>Ftth</span></a></li>
-            <li><a><span><i class="fa fa-university" aria-hidden="true"></i>
-</span><span>Ran</span></a></li>
-            <li><a><span><i class="fa fa-rss" aria-hidden="true"></i>
-</span><span>Vas</span></a></li>
-            <li><a><span><i class="fa fa-braille" aria-hidden="true"></i>
-</span><span>Soc-IT</span></a></li>
-            <li><a><span><i class="fa fa-rss" aria-hidden="true"></i>
-</span><span>Core-PS</span></a></li>
-            <li><a><span><i class="fa fa-braille" aria-hidden="true"></i>
-</span><span>Core-CS</span></a></li>
-            <li><a><span><i class="fa fa-university" aria-hidden="true"></i>
-</span><span>NPS</span></a></li>
+            <li class="active" data-display="#ftth2"><a><span><i class="fa fa-cloud"></i></span><span>All tickets</span></a></li>
+            <li data-display="#ftth"><a><span><i class="fa fa-cloud"></i></span><span>Ftth</span></a></li>
+            <li data-display="#ran"><a><span><i class="fa fa-university" aria-hidden="true"></i></span><span>Ran</span></a></li>
+            <li data-display="#vas"><a><span><i class="fa fa-rss" aria-hidden="true"></i></span><span>Vas</span></a></li>
+            <li data-display="#socit"><a><span><i class="fa fa-braille" aria-hidden="true"></i></span><span>Soc-IT</span></a></li>
+            <li data-display="#coreps"><a><span><i class="fa fa-rss" aria-hidden="true"></i></span><span>Core-PS</span></a></li>
+            <li data-display="#corecs"><a><span><i class="fa fa-braille" aria-hidden="true"></i></span><span>Core-CS</span></a></li>
+            <li data-display="#nps"><a><span><i class="fa fa-university" aria-hidden="true"></i></span><span>NPS</span></a></li>
         </ul>
                 </div>
 
-    <main class="layout-wrapper">
-        <div class="my-card">
-            <div class="p0">
+    <main>
 
-                <h5>P0</h5>
-                <h3>0</h3>
-            </div>
-        </div>
-
-
-<div class="my-card">
-    <div class="p1">
-
-<h5>P1</h5>
-<h2>4</h2>
-
-    </div>
-</div>
-
-<div class="my-card">
-    <a>
-        <div class="p2">
-            <h5>P2</h5>
-            <h2>2</h2>
-        </div>
-    </a>
-</div>
-
-<div class="my-card">
-    <div class="p3">
-        <h5>P3</h5>
-        <h2>1</h2>
-    </div>
-</div>
-
-<div class="my-card">
-    <div class="p4">
-        <h5>P4</h5>
-        <h2>14</h2>
-
-    </div>
-</div>
-
-<div class="table-control-panel">
-
-    <div class="tab-view">
-        <div class="tab-button">
-            <div class="active b1" data-target="#table">INCIDENTS</div>
-        </div>
-        <div class="tab-button">
-            <div class="b1" data-target="#graph">STATS</div>
-        </div>
-    </div>
-
-    <div class="control-panel">
-        kennedy mwangi
-    </div>
-
-</div>
-
-
-        <div class="tab-content">
-
-            <div id="table" data-content class="active">
-                <div th:insert="fragments/footer :: mytable"></div>
-            </div>
-
-            <div id="graph" data-content>
-                <p>This is my kennedy</p>
-            </div>
-
-        </div>
+        <div class="active" th:insert="fragments/ftth :: ftth-fragment" data-propagate id="ftth"></div>
+        <div th:insert="fragments/corecs :: corecs-fragment" data-propagate id="corecs"></div>
+        <div th:insert="fragments/coreps :: coreps-fragment" data-propagate id="coreps"></div>
+        <div th:insert="fragments/nps :: nps-fragment" data-propagate id="nps"></div>
+        <div th:insert="fragments/ran :: ran-fragment" data-propagate id="ran"></div>
+        <div th:insert="fragments/socit :: socit-fragment" data-propagate id="socit"></div>
+        <div th:insert="fragments/vas :: vas-fragment" data-propagate id="vs"></div>
+        <div th:insert="fragments/ftth :: ftth-fragment" data-propagate id="ftth2"></div>
 
     </main>
     <script th:src="@{jquery.min.js}"></script>

@@ -64,3 +64,12 @@ function updateEventCount() {
         $("#eventCount").replaceWith(fragment); // update snippet of page
     });
 }
+
+window.addEventListener("scroll",()=>{
+    const navigation=document.getElementsByClassName("nav-bar")[0];
+    const sidenavigation=document.getElementsByClassName("sidenav")[0];
+
+    navigation.classList.toggle("sticky",window.scrollY > 0);
+    sidenavigation.classList.toggle("sticky-sidenav",window.scrollY > 0);
+
+});
