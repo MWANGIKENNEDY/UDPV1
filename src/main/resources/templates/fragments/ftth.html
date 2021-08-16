@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" th:href="@{bootstrap.min.css}">
     <link rel="stylesheet" type="text/css" th:href="@{style.css}">
     <title>Title</title>
@@ -62,7 +63,9 @@
         </div>
 
         <div class="control-panel">
-            kennedy mwangi
+
+            <input type="text" placeholder="Search ticket"><i class="fa fa-search" aria-hidden="true"></i>
+
         </div>
 
     </div>
@@ -74,7 +77,7 @@
             <div th:insert="fragments/footer :: mytable"></div>
         </div>
 
-        <div id="graph" data-content>
+        <div id="graph" data-content class="layout-wrapper">
             <p>This is my kennedy</p>
         </div>
 

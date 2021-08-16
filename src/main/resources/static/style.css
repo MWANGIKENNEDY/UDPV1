@@ -387,6 +387,33 @@ label{
     font-size: 4rem;
 }
 
+.control-panel{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    min-height: 3rem;
+    padding-right: 1rem;
+}
+
+
+.control-panel input{
+    background-color: #bdbdbd;
+    width: 20%;
+    height: 2.5rem;
+    border: 1px solid black;
+    padding: 0;
+    color: black;
+}
+
+.control-panel i{
+    font-size: 2rem;
+    color: #bdbdbd;
+    line-height: 2.5rem;
+}
+
+
+
 
 
 
