@@ -38,6 +38,23 @@ myTabs.forEach((myTab)=>{
     })
 })
 
+const myLinks=document.querySelectorAll('[data-display]');
+const myContainers=document.querySelectorAll('[data-propagate]');
+
+myLinks.forEach((myLink)=>{
+    myLink.addEventListener("click",(e)=>{
+        const target=document.querySelector(myLink.dataset.display);
+        myContainers.forEach((myContainer)=>{
+            myContainer.classList.remove('active');
+        });
+        myLinks.forEach((myLink)=>{
+            myLink.classList.remove('active');
+        });
+        myLink.classList.add('active');
+        target.classList.add('active');
+    })
+})
+
 myElement.addEventListener("click",()=>{
     
     if(isToggled){

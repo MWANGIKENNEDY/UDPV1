@@ -114,12 +114,6 @@ table{
     padding: .4rem 1.5rem;
 }
 
-.sidenav ul li:first-child{
-    background-color: white;
-    color: black;
-}
-
-
 .sidenav ul li a{
     width: 100%;
     display: flex;
