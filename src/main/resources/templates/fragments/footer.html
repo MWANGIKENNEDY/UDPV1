@@ -17,14 +17,28 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="ticket: ${tickets}">
-            <td th:text="${ticket.inc_number}"></td>
-            <td th:text="${ticket.raised_by}"></td>
-            <td th:text="${ticket.priority}"></td>
-            <td th:text="${ticket.assigned_to}"></td>
-            <td th:text="${ticket.cause_of_failure}"></td>
-            <td th:text="${ticket.status}"></td>
+
+        <tr>
+            <td><div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div></td>
+            <td><div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div></td>
+            <td><div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div></td>
+            <td><div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div></td>
+            <td><div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div></td>
+            <td><div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div></td>
         </tr>
+
         </tbody>
     </table>
 
