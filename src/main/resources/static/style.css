@@ -40,10 +40,10 @@ img{
 }
 
 .navlinks{
-    width: 235px;
+    width: 17vw;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
     padding-left: 1.5rem;
@@ -391,7 +391,7 @@ label{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    font-size: 4rem;
+    font-size: 2.9rem;
 }
 
 .control-panel{
@@ -430,6 +430,24 @@ label{
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+#testtable thead{
+    background-color: #464950;
+    color: white;
+}
+
+#testtable thead tr th{
+    border-right: 1px solid white;
+}
+
+#testtable tbody tr td{
+    text-align: center;
+}
+
+
+#testtable th{
+    background-color: #464950;
+    color: white;
 }
 
 #testtable #testtable:first-child{
