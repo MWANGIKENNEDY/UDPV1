@@ -84,6 +84,7 @@ img{
     flex-wrap: wrap;
     padding: 1rem 15px 15px 15px;
     transition: 0.5s;
+    min-height: 100vh;
 }
 
 table{
@@ -91,7 +92,7 @@ table{
 }
 
 .sidenav{
-    position: fixed;
+    position: absolute;
     top: 7rem;
     min-height: inherit;
     width: 17vw;
@@ -106,12 +107,13 @@ table{
 .sidenav ul{
     position: absolute;
     width: 100%;
+    padding: 0;
     background-color: #464950;
 }
 
 .sidenav ul li{
     width: 100%;
-    padding: .4rem 1.5rem;
+    padding: .6rem;
 }
 
 .sidenav ul li a{
@@ -126,7 +128,6 @@ table{
     height: 1rem;
     line-height: 1rem;
 }
-
 
 
 
@@ -262,7 +263,7 @@ table{
     width: 100%;
 }
 .active[data-display]{
-    background-color: white;
+    background-color: #bdbdbd;
     color: black;
 }
 
@@ -291,8 +292,6 @@ table{
          width: 100%;
      }
 
-
-
     .layout-wrapper{
         margin-left: 17vw;
         transition: 0.5s;
@@ -317,6 +316,7 @@ table{
         margin-left: 17vw;
         transition: 0.5s;
     }
+
 
 }
 
@@ -359,12 +359,34 @@ label{
 .sticky-sidenav{
     position: fixed;
     top: 3.5rem;
-    transition: 0.5s;
+    transition: 0s;
 }
 
 .sidenav ul li:hover{
     cursor: pointer;
 }
+
+.hello{
+    margin-left: -17vw;
+    transition: 0.5s;
+}
+
+.wooi{
+    margin-left: 17vw;
+    transition: 0.5s;
+}
+
+.lucy{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 4rem;
+}
+
 
 
 

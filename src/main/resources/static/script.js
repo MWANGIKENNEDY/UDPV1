@@ -56,18 +56,31 @@ myLinks.forEach((myLink)=>{
 })
 
 myElement.addEventListener("click",()=>{
-    
+
+    const mySidenav=document.getElementsByClassName("sidenav")[0];
     if(isToggled){
-        document.getElementsByClassName("sidenav")[0].style.transform = "translate(0vw)";
         document.getElementsByClassName("layout-wrapper")[0].style.marginLeft="17vw";
+        document.getElementsByClassName("layout-wrapper")[1].style.marginLeft="17vw";
+        document.getElementsByClassName("layout-wrapper")[2].style.marginLeft="17vw";
+        document.getElementsByClassName("layout-wrapper")[3].style.marginLeft="17vw";
+        document.getElementsByClassName("layout-wrapper")[4].style.marginLeft="17vw";
+        document.getElementsByClassName("layout-wrapper")[5].style.marginLeft="17vw";
+        document.getElementsByClassName("layout-wrapper")[6].style.marginLeft="17vw";
+        document.getElementsByClassName("layout-wrapper")[7].style.marginLeft="17vw";
         isToggled =! isToggled;
     }
     else{
-        document.getElementsByClassName("sidenav")[0].style.transform = "translate(-17vw)";
         document.getElementsByClassName("layout-wrapper")[0].style.marginLeft="0vw";
+        document.getElementsByClassName("layout-wrapper")[1].style.marginLeft="0vw";
+        document.getElementsByClassName("layout-wrapper")[2].style.marginLeft="0vw";
+        document.getElementsByClassName("layout-wrapper")[3].style.marginLeft="0vw";
+        document.getElementsByClassName("layout-wrapper")[4].style.marginLeft="0vw";
+        document.getElementsByClassName("layout-wrapper")[5].style.marginLeft="0vw";
+        document.getElementsByClassName("layout-wrapper")[6].style.marginLeft="0vw";
+        document.getElementsByClassName("layout-wrapper")[7].style.marginLeft="0vw";
         isToggled =! isToggled;
     }
-
+    mySidenav.classList.toggle("hello");
     //
 });
 

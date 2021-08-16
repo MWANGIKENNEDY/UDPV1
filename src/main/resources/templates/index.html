@@ -48,14 +48,14 @@
 
     <main>
 
-        <div class="active"  th:insert="fragments/home :: home-fragment" data-propagate id="ftth2"></div>
-        <div th:insert="fragments/ftth :: ftth-fragment" data-propagate id="ftth"></div>
+        <div  th:insert="fragments/home :: home-fragment" data-propagate id="ftth2"></div>
+        <div class="active" th:insert="fragments/ftth :: ftth-fragment" data-propagate id="ftth"></div>
         <div th:insert="fragments/corecs :: corecs-fragment" data-propagate id="corecs"></div>
         <div th:insert="fragments/coreps :: coreps-fragment" data-propagate id="coreps"></div>
         <div th:insert="fragments/nps :: nps-fragment" data-propagate id="nps"></div>
         <div th:insert="fragments/ran :: home-fragment" data-propagate id="ran"></div>
         <div th:insert="fragments/socit :: socit-fragment" data-propagate id="socit"></div>
-        <div th:insert="fragments/vas :: vas-fragment" data-propagate id="vs"></div>
+        <div th:insert="fragments/vas :: vas-fragment" data-propagate id="vas"></div>
 
     </main>
     <script th:src="@{jquery.min.js}"></script>
